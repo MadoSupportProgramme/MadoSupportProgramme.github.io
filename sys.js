@@ -27,22 +27,22 @@ function submit() {
         let rewards = "";
         let multiplierIncrease = 0;
 
-        if (SUPPORTS >= 20 && AP >= 400) {
+        if (SUPPORTS >= 10 && AP >= 400) {
             tier = "Seraph";
             rewards = "100 Points, 40 RP, Multiplier Increase of 1, Exclusive benefits";
             multiplierIncrease = 1;
-        } else if (SUPPORTS >= 12 && AP >= 300) {
+        } else if (SUPPORTS >= 7 && AP >= 300) {
             tier = "Guardian";
             rewards = "75 Points, 25 RP, Multiplier Increase of 0.5, Exclusive benefits";
             multiplierIncrease = 0.5;
-        } else if (SUPPORTS >= 8 && AP >= 200) {
+        } else if (SUPPORTS >= 4 && AP >= 200) {
             tier = "Custodian";
             rewards = "50 Points, 15 RP, Multiplier Increase of 0.25, Exclusive benefits";
             multiplierIncrease = 0.25;
-        } else if (SUPPORTS >= 5 && AP >= 100) {
+        } else if (SUPPORTS >= 2 && AP >= 100) {
             tier = "Ally";
             rewards = "35 Points, 10 RP";
-        } else if (SUPPORTS >= 2 && AP >= 50) {
+        } else if (SUPPORTS >= 1 && AP >= 50) {
             tier = "Helper";
             rewards = "20 Points, 5 RP";
         } else {
