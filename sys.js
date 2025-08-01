@@ -7,7 +7,7 @@ function submit() {
     let localStorageValues = [];
 
     for (let j = 6; j < rowCount + 5; j++) {
-        let NAME, RANK, SUPPORTS, AP;
+        let NAME, RANK, AP, SUPPORTS;
 
         for (let a = 0; a < 4; a++) {
             let id = `s${j}${a}`;
@@ -16,8 +16,8 @@ function submit() {
                 switch (a) {
                     case 0: NAME = element.value; break;
                     case 1: RANK = element.value; break;
-                    case 2: SUPPORTS = parseFloat(element.value) || 0; break;
-                    case 3: AP = parseFloat(element.value) || 0; break;
+                    case 2: AP = parseFloat(element.value) || 0; break;
+                    case 3: SUPPORTS = parseFloat(element.value) || 0; break;
                 }
             }
         }
@@ -126,3 +126,4 @@ function more() {
     }
     addRowFocusListeners();
 }
+
