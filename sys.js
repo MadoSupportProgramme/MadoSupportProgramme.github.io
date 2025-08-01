@@ -52,8 +52,8 @@ function submit() {
 
         // Generate the output
         let data = `${NAME} (${RANK})\n`;
-        data += `Supports: ${SUPPORTS}\n`;
-        data += `AP: ${AP}\n\n`;
+        data += `AP: ${AP}\n`;
+        data += `Supports: ${SUPPORTS}\n\n`;
         data += `Resulting Tier: ${tier}\n`;
         data += `Rewards: ${rewards}\n\n`;
         data += `=================================\n`;
@@ -126,4 +126,5 @@ function more() {
     }
     addRowFocusListeners();
 }
+
 
